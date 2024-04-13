@@ -16,6 +16,16 @@ Run the dashboard with:
 python app.py
 ```
 
+## Directory Structure
+
+- **/data-collection**
+  - **/scripts**: Contains scripts for downloading and preprocessing the World Bank data.
+  - **/data**: Stores datasets retreived and preprocessed in the scripts along with the datasets downloaded from external sources.
+- **/dashboard**
+  - **/assets**: Includes CSS and JavaScript files for styling and functionality enhancements.
+  - **app.py**: The main Dash application script that defines the server and web app layout.
+
+
 ## Features
 
 This dashboard offers a range of features designed to provide a comprehensive view of global economic and social indicators:
