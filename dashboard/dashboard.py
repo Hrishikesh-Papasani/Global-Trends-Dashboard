@@ -13,15 +13,15 @@ from dash.exceptions import PreventUpdate
 import plotly.io as pio
 
 # Loading our datasets
-df_population = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/world_population_data.csv')
-df_gdp = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/API_NY_3/GDP-TOTAL.csv')
-df_gdp_growth = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/API_NY_2/GDP-growth-percentage.csv')
-df_life_expectancy = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/world_life_expectancy_data.csv')
-df_literacy_rate = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/world_literacy_rate_data.csv')
-df_unemployment = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/world_unemployment_data.csv')
-df_poverty_ratio = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/world_poverty_headcount_ratio_data.csv')
-df_map = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/API_NY_1/GDP-PPP.csv')
-df_map_growth = pd.read_csv('/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/data/API_NY_2/GDP-growth-percentage.csv')
+df_population = pd.read_csv('../data-collection/data/world_population_data.csv')
+df_gdp = pd.read_csv('../data-collection/data/API_NY_3/GDP-TOTAL.csv')
+df_gdp_growth = pd.read_csv('../data-collection/data/API_NY_2/GDP-growth-percentage.csv')
+df_life_expectancy = pd.read_csv('../data-collection/data/world_life_expectancy_data.csv')
+df_literacy_rate = pd.read_csv('../data-collection/data/world_literacy_rate_data.csv')
+df_unemployment = pd.read_csv('../data-collection/data/world_unemployment_data.csv')
+df_poverty_ratio = pd.read_csv('../data-collection/data/world_poverty_headcount_ratio_data.csv')
+df_map = pd.read_csv('../data-collection/data/API_NY_1/GDP-PPP.csv')
+df_map_growth = pd.read_csv('../data-collection/data/API_NY_2/GDP-growth-percentage.csv')
 
 
 
