@@ -13,19 +13,26 @@ from dash.exceptions import PreventUpdate
 import plotly.io as pio
 import os
 
-# Get the absolute path of the project root
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# Determine the project root (one level up from the script directory if this script is located in the root)
+# Get the directory of the current script
+script_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Construct the absolute paths and load datasets
-df_population = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/world_population_data.csv'))
-df_gdp = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/API_NY_3/GDP-TOTAL.csv'))
-df_gdp_growth = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/API_NY_2/GDP-growth-percentage.csv'))
-df_life_expectancy = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/world_life_expectancy_data.csv'))
-df_literacy_rate = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/world_literacy_rate_data.csv'))
-df_unemployment = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/world_unemployment_data.csv'))
-df_poverty_ratio = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/world_poverty_headcount_ratio_data.csv'))
-df_map = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/API_NY_1/GDP-PPP.csv'))
-df_map_growth = pd.read_csv(os.path.join(PROJECT_ROOT, 'data-collection/data/API_NY_2/GDP-growth-percentage.csv'))
+# Go up one level from the script to get to the project root
+PROJECT_ROOT = os.path.dirname(script_directory)
+
+# Construct paths to the data files
+data_path = os.path.join(PROJECT_ROOT, 'data-collection/data')
+
+# Load the datasets
+df_population = pd.read_csv(os.path.join(data_path, 'world_population_data.csv'))
+df_gdp = pd.read_csv(os.path.join(data_path, 'API_NY_3/GDP-TOTAL.csv'))
+df_gdp_growth = pd.read_csv(os.path.join(data_path, 'API_NY_2/GDP-growth-percentage.csv'))
+df_life_expectancy = pd.read_csv(os.path.join(data_path, 'world_life_expectancy_data.csv'))
+df_literacy_rate = pd.read_csv(os.path.join(data_path, 'world_literacy_rate_data.csv'))
+df_unemployment = pd.read_csv(os.path.join(data_path, 'world_unemployment_data.csv'))
+df_poverty_ratio = pd.read_csv(os.path.join(data_path, 'world_poverty_headcount_ratio_data.csv'))
+df_map = pd.read_csv(os.path.join(data_path, 'API_NY_1/GDP-PPP.csv'))
+df_map_growth = pd.read_csv(os.path.join(data_path, 'API_NY_2/GDP-growth-percentage.csv'))
 
 
 
