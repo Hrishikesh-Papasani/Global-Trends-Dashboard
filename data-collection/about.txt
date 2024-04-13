@@ -1,0 +1,9 @@
+Details:
+Data collected from: https://www.worldbank.org/en/home
+API: https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-documentation
+
+Scripts: Contains Python scripts to access, retrieve and preprocess the data. 
+
+data: Preprocessed datasets.
+
+countries.geo.json: GeoJSON file for world map

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAF4F4;
+    color: #305960;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0; /* Ensures no default margin */
+}
+
+/* Use Bootstrap's container for max width and responsive padding */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Typography adjustments for responsive text sizing */
+h1, h2, label {
+    color: #287D8E;
+    margin: 20px 0 10px; /* Unified margin for simplicity */
+}
+
+h1 {
+    font-size: 2.2rem; /* Adjusted for better scaling on small screens */
+}
+
+h2 {
+    font-size: 1.8rem; /* Adjusted for better scaling on small screens */
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly reduced for better fit on small screens */
+    margin-bottom: 5px; /* Closer association with inputs */
+}
+
+/* Ensuring dropdowns and inputs are fully responsive */
+.Select, .dcc_control, .Select-menu-outer, .Select-control, input, textarea {
+    width: 100%; /* Full width to adapt to parent's size */
+    margin: 5px 0; /* Consistent vertical spacing */
+    border-radius: 4px; /* Unified border radius for form elements */
+}
+
+/* Adjusting for a unified look of dropdowns */
+.Select-control {
+    border: 2px solid #B3E5FC; /* Harmonized border color */
+    height: auto; /* Allows for height adjustment based on content */
+}
+
+.Select--single > .Select-control .Select-value, .Select-option {
+    color: #305960; /* Consistent color for readability */
+}
+
+.Select-option.is-focused, .Select-option.is-selected {
+    background-color: #B3E5FC; /* Highlight color for selected/focused options */
+}
+
+/* Graph and card styling adjustments for shadow and spacing */
+.card, .graph {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Adjusted padding for space efficiency */
+    margin-bottom: 20px; /* Space between consecutive blocks */
+    border-radius: 4px; /* Consistency in border radius */
+}
+
+/* Footer styling for clear separation and emphasis */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background for differentiation */
+    color: #287D8E;
+    border-top: 2px solid #B3E5FC; /* Top border for clear separation */
+}
