@@ -158,11 +158,9 @@ def get_country_coordinates(country_name):
         return [0, 0]  # Return a default value if country not found or an error occurs
 
 
-# Geojson file For folium map (Contains information like coordinates, borders and other relevant world map data)
-geojson_path = '/Users/hrishi/original-desktop/Data Science/Projects/Major_Project/data-collection/countries.geo.json'
+geojson_path = os.path.join(PROJECT_ROOT, 'data-collection/countries.geo.json')
 with open(geojson_path, 'r', encoding='utf-8') as f:
     countries_geojson = json.load(f)
-
 
 def get_years_with_data(df_map, indicator=None):
     """
