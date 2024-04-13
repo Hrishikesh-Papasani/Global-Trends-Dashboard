@@ -422,7 +422,7 @@ app.layout = dbc.Container(fluid=True, children=[
 
             dcc.Dropdown(
                 id='gdp-country-dropdown',
-                options=[{'label': i, 'value': i} for i in df_gdp.columns[2:]],
+                options=[{'label': country, 'value': country} for country in df_gdp['Country Name'].unique() if country != "Not classified"],
                 value=None,
                 multi=True,
                 placeholder="Top Seven Economies"
@@ -828,9 +828,6 @@ def update_unemployment_chart(selected_country, selected_year_range):
 # Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-
 
 
 
