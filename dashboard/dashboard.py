@@ -393,7 +393,7 @@ app.layout = dbc.Container(fluid=True, children=[
             html.Label("Select Countries (Can be multiple):"),
             dcc.Dropdown(
                 id='population-dropdown',
-                options=[{'label': i, 'value': i} for i in df_population.columns[1:]],
+                options=[{'label': i, 'value': i} for i in df_population.columns[2:]],
                 value='World',
                 multi=True
             ),
@@ -422,7 +422,7 @@ app.layout = dbc.Container(fluid=True, children=[
 
             dcc.Dropdown(
                 id='gdp-country-dropdown',
-                options=[{'label': country, 'value': country} for country in df_gdp['Country Name'].unique()],
+                options=[{'label': i, 'value': i} for i in df_gdp.columns[2:]],
                 value=None,
                 multi=True,
                 placeholder="Top Seven Economies"
@@ -447,7 +447,7 @@ app.layout = dbc.Container(fluid=True, children=[
 
             dcc.Dropdown(
                 id='poverty-ratio-dropdown',
-                options=[{'label': col, 'value': col} for col in df_poverty_ratio.columns[1:]],
+                options=[{'label': col, 'value': col} for col in df_poverty_ratio.columns[2:]],
                 value='World',
                 multi=False
             ),
@@ -468,7 +468,7 @@ app.layout = dbc.Container(fluid=True, children=[
             html.Label("Select Region:"),
             dcc.Dropdown(
                 id='unemployment-dropdown',
-                options=[{'label': col, 'value': col} for col in df_unemployment.columns[1:]],
+                options=[{'label': col, 'value': col} for col in df_unemployment.columns[2:]],
                 value='World',
                 multi=False
             ),
@@ -496,7 +496,7 @@ app.layout = dbc.Container(fluid=True, children=[
             html.Label("Select Region:"),
             dcc.Dropdown(
                 id='region-dropdown',
-                options=[{'label': i, 'value': i} for i in df_literacy_rate.columns[1:]],
+                options=[{'label': i, 'value': i} for i in df_literacy_rate.columns[2:]],
                 value='World',
                 multi=True
             ),
