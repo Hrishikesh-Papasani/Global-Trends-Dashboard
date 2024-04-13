@@ -342,7 +342,7 @@ year_options_population.insert(0, {'label': 'All Time', 'value': 'all'})
 # Set the Dash application
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.config.suppress_callback_exceptions = True # Written before deployment to avoid any unknown errors in the UI
-
+server = app.server
 
 
 """
