@@ -3,12 +3,14 @@
 ## Overview
 An interactive dashboard visualizing global trends such as GDP growth, population dynamics, and more using World Bank data, built with Python and Dash.
 
+Hosted at: https://worldmetrics-phr.onrender.com
 ## Installation & Usage
 Clone the repository and navigate to the project directory:
 ```bash
 git clone https://github.com/Hrishikesh-Papasani/Global-Trends-Dashboard.git
 cd Global-Trends-Dashboard
 ```
+
 
 
 Run the dashboard with:
